@@ -5,11 +5,9 @@
   "scripts": {
     "build": "react-scripts build",
     "eject": "react-scripts eject",
-    "postinstall": "husky install",
-    "lint": "eslint lint",
-    "lint:fix": "eslint lint --fix",
-    "prepack": "pinst --disable",
-    "postpack": "pinst --enable",
+    "lint": "eslint .",
+    "lint:fix": "eslint . --fix",
+    "prepare": "husky install",
     "start": "react-scripts start",
     "test": "react-scripts test"
   },
