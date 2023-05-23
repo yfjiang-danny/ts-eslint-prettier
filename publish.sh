@@ -13,5 +13,9 @@ cp -f .gitignore ${TARGET}/template/gitignore
 cp -f tsconfig.json ${TARGET}/template/tsconfig.json
 cp -f template.json ${TARGET}/template.json
 
+# test
+npx create-react-app test --template file:${TARGET}
+rm -fr test
+
 cd ${TARGET}
 npm publish
