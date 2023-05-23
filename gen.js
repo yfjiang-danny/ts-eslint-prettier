@@ -13,7 +13,11 @@ const fs = require("fs");
 
     fs.writeFileSync(
       "template.json",
-      JSON.stringify(packageJson),
+      JSON.stringify({
+        package: {
+          ...packageJson,
+        },
+      }),
       function (err) {
         if (err) {
           console.log("Write failed: " + err);
