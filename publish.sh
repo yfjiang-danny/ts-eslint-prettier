@@ -2,9 +2,9 @@ TARGET=../scaffold/cra-template-ts-eslint-prettier
 
 node gen.js
 
-cp -rf public ${TARGET}/template/public
-cp -rf src ${TARGET}/template/src
-cp -rf .husky ${TARGET}/template/.husky
+cp -rf public ${TARGET}/template
+cp -rf src ${TARGET}/template
+cp -rf .husky ${TARGET}/template
 cp -f .commitlintrc ${TARGET}/template/.commitlintrc
 cp -f .eslintignore ${TARGET}/template/.eslintignore
 cp -f .eslintrc ${TARGET}/template/.eslintrc
