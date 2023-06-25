@@ -11,6 +11,10 @@ const fs = require("fs");
     delete packageJson.private;
     delete packageJson.browserslist;
 
+    delete packageJson.devDependencies["husky"];
+    delete packageJson.devDependencies["@commitlint/cli"];
+    delete packageJson.devDependencies["@commitlint/config-conventional"];
+
     fs.writeFileSync(
       "template.json",
       JSON.stringify({
