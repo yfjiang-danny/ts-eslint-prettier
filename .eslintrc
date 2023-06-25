@@ -28,7 +28,7 @@
     "prettier" // eslint-plugin-prettier
   ],
   "rules": {
-    "prettier/prettier": "error", // 开启规则
+    "prettier/prettier": "error", // 开启规则, 如果是 window 环境，设置成 ["error", { "endOfLine": "auto" }]，不然可能会保存
     "no-unused-vars": "error",
     "curly": "warn"
   }
